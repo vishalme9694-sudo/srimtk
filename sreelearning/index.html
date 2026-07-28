@@ -30,24 +30,29 @@
         }
 
         /* -------------------------------------------------- */
-        /* Horizontal Box Shape Styling */
+        /* Full Image Fit - Horizontal Box Container */
         /* -------------------------------------------------- */
         .logo-box-horizontal {
-            width: 180px;                   /* Length/Width badhai gayi hai */
-            height: 90px;                   /* Height horizontal ratio me rakhi hai */
+            width: 100%;                    /* Poore card ki width lega */
+            max-width: 280px;               /* Maximum width limit */
+            height: 120px;                  /* Box ki height */
             margin: 0 auto 16px auto;
-            border-radius: 12px;            /* Light rounded corners */
-            border: 3px solid #f59e0b;      /* Golden Border */
+            border-radius: 12px;            /* Smooth rounded corners */
+            border: 2px solid #f59e0b;      /* Golden border */
             overflow: hidden;
-            background-color: #0f172a;
+            background-color: #0f172a;     /* Background color agar image choti ho */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;                   /* Inside padding taaki border se chipke nahi */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .logo-box-horizontal img {
             width: 100%;
             height: 100%;
-            object-fit: cover;            /* Image ko distort hone se bachaega */
-            object-position: center;      /* Center focus rakhega */
+            object-fit: contain;          /* YAHAN CHANGE HUA HAI: Ab image bina kate poori fit hogi */
+            object-position: center;      /* Center me rakhega */
             display: block;
         }
         /* -------------------------------------------------- */
@@ -137,7 +142,7 @@
 
 <div class="container">
     
-    <!-- HORIZONTAL LOGO BOX -->
+    <!-- FULL IMAGE FIT BOX -->
     <div class="logo-box-horizontal">
         <img src="sri.png" alt="ShreeMatka Logo">
     </div>
