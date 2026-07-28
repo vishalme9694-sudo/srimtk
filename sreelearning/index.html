@@ -30,27 +30,24 @@
         }
 
         /* -------------------------------------------------- */
-        /* Updated Box Shape Image Container */
+        /* Horizontal Box Shape Styling */
         /* -------------------------------------------------- */
-        .logo-box {
-            width: 110px;
-            height: 110px;
+        .logo-box-horizontal {
+            width: 180px;                   /* Length/Width badhai gayi hai */
+            height: 90px;                   /* Height horizontal ratio me rakhi hai */
             margin: 0 auto 16px auto;
-            border-radius: 14px;            /* Box ke corners ko halka round rakhne ke liye */
-            border: 3px solid #f59e0b;      /* Golden border */
-            overflow: hidden;               /* Extra image content ko truncate karega */
-            background-color: #0f172a;     /* Background placeholder jab tak image load na ho */
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 12px;            /* Light rounded corners */
+            border: 3px solid #f59e0b;      /* Golden Border */
+            overflow: hidden;
+            background-color: #0f172a;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
-        .logo-box img {
+        .logo-box-horizontal img {
             width: 100%;
             height: 100%;
-            object-fit: cover;            /* Isse KOI BHI image stretch nahi hogi aur fit ho jaayegi */
-            object-position: center;      /* Image center me focused rahegi */
+            object-fit: cover;            /* Image ko distort hone se bachaega */
+            object-position: center;      /* Center focus rakhega */
             display: block;
         }
         /* -------------------------------------------------- */
@@ -140,8 +137,8 @@
 
 <div class="container">
     
-    <!-- BOX SHAPE IMAGE CONTAINER -->
-    <div class="logo-box">
+    <!-- HORIZONTAL LOGO BOX -->
+    <div class="logo-box-horizontal">
         <img src="sri.png" alt="ShreeMatka Logo">
     </div>
     
